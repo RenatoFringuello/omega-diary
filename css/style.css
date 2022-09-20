@@ -7,7 +7,7 @@ html, body{
     place-content: center;
 }
 body > .container{
-    height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
     max-width: 1024px;
     position: relative;
