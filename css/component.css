@@ -1,0 +1,151 @@
+/* input type text, pwd, textarea */
+.input-text{
+    width:100%;
+    padding: var(--dist3);
+    border-radius: var(--dist2);
+    background-color: var(--def5);
+}
+.input-text::placeholder{
+    color:var(--def2);
+}
+
+/* button main for main function like login */
+a:not(a.button-main), a:visited:not(a.button-main){
+    color:var(--def4);
+}
+a.button-main{
+    text-decoration: none;
+}
+.button-main{
+    width: 100%;
+    max-height: 54px;
+    background-color: var(--def4);
+    color:var(--def3);
+    border-radius: var(--dist1);
+    padding: var(--dist1);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+.unSelected{
+    background-color: var(--def1);
+    color:var(--def4);
+    border: 5px solid;
+}
+
+/*aside menu button */
+.hamburger{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    background-color: var(--def1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.line{
+    width: 60%;
+    height: 6px;
+    background-color: var(--def4);
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.closed .line{
+    top:35%;
+    left:var(--dist1);
+}
+.closed #b{
+    top:65%;
+}
+.open .line{
+    transform: rotate(45deg);
+    top:21px;
+}
+.open #b{
+    transform: rotate(-45deg);
+}
+
+/* overlay is the shadow on the body when menu is open */
+.overlay{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0008;
+    position: absolute;
+    top:0;left:0;
+    z-index: 2;
+}
+
+/* dashboard 2 */
+.dashboard{
+    width: 100%;
+    background-color: var(--def5);
+    border-radius: var(--dist1);
+    padding: 0 var(--dist2) var(--dist2);
+}
+.dashboard .inline{
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard .group .title{
+    font-size: 16pt;
+    font-weight: bold;
+    color: var(--def3);
+    padding: var(--dist2) 0;
+}
+.dashboard .group .area{
+    /* set different padding to the bottom cause the span/div bug (5px offset is good) */
+    padding: var(--dist2) var(--dist2) var(--dist3) var(--dist2);
+    background-color: var(--def2);
+    border-radius: var(--dist2);
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard .group .two-items{
+    width: calc(40vw - 14px);
+}
+.dashboard .group .three-items{
+    width: calc(60vw - 26px);
+}
+.dashboard .group .four-items{
+    width: calc(80vw - 38px);
+}
+.dashboard .group .five-items{
+    width: calc(100vw - 50px);
+}
+
+/* radio-input customized*/
+.dashboard .group .area .radio-input {
+    display: inline-block;
+    position: relative;
+    /* the real width height */
+    /* (100vw - 60px) / 5 -10px */
+    padding-left: calc(20vw - 22px); 
+    margin-bottom: calc(20vw - 17px);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.dashboard .group .area .radio-input input {
+    position: absolute;
+    visibility: hidden;
+}
+.dashboard .group .area .radio-input .checkmark{
+    font-size:32pt;
+    text-align:center;
+    line-height:calc(20vw - 22px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(20vw - 22px);
+    width: calc(20vw - 22px);
+    background-color:  var(--def4);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.dashboard .group .area .radio-input :not(input:checked) ~ .checkmark {
+    opacity:50%;
+    background-color:  var(--def5);
+}

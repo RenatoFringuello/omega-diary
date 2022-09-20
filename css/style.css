@@ -1,0 +1,139 @@
+html, body{  
+    height: -webkit-fill-available;
+    background: var(--def1);
+    color: var(--def4);
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    place-content: center;
+}
+body > .container{
+    height: 100vh;
+    width: 100vw;
+    max-width: 1024px;
+    position: relative;
+}
+
+.principale{
+    width: 100%;
+    position: absolute;
+    padding: var(--dist1);
+    left:0;
+    z-index: 2;
+}
+
+/* ------------------------------HEADER------------------------------ */
+header.principale{
+    top:0;
+    height: 50px;
+    z-index: 3;
+}
+header.principale .logo{
+    text-align: center;
+    font-size: 20pt;
+    right: var(--dist1);
+    top:var(--dist1);
+    line-height: 21px;
+}
+
+/* ------------------------------MAIN------------------------------ */
+main{
+    padding: 70px var(--dist1) ;
+}
+main > .title{
+    padding: 0 0 30px 0;
+}
+.form{
+    height: 100%;
+}
+.form .element{
+    margin-bottom: 26px;
+}
+
+/* ------------------------------WORKOUT-Main------------------------------ */
+/* timer */
+body footer.principale.workout{
+    background-color: var(--def2);
+    border-radius:20px 20px 0 0;
+    color: var(--def3);
+    /* add in js */
+
+    /* height: calc(100% - 50px); max*/
+    /* height: fit-content; min*/
+}
+footer.workout .timer{
+    display: flex;
+    justify-content: space-between;
+}
+footer.workout .timer button.rest{
+    width: calc(100% - 85px);
+    background-color: var(--def5);
+}
+footer.workout .timer input.timerset{
+    border-radius: var(--dist1);
+    text-align: center;
+    color: var(--def3);
+}
+
+.tank{
+    width: 100%;
+    height: calc(100% - 50px - 30px - 54px);
+    background-color: var(--def1);
+    border-radius: var(--dist1);
+    position: relative;
+    overflow: hidden;
+}
+.tank .liquid{
+    width: 100%;
+    background-color: var(--def4);
+    border-radius: var(--dist1);
+    position: absolute;
+    bottom: 0;
+}
+.tank .time{
+    position: absolute;
+    font-size: 110pt;
+    color:var(--def1);
+    transform: translate(-50%, -50%);
+    top:50%;left:50%;
+}
+.tank .big{
+    -webkit-text-stroke: var(--dist1) var(--def4);
+}
+
+/* ------------------------------ASIDE------------------------------ */
+ul.buttons-menu{
+    width: 100%;
+    height: calc(100% - 120px);
+    margin-top: 120px;
+    position: relative;
+}
+ul.buttons-menu .item{
+    margin-bottom:10px ;
+    display: none;
+}
+#logOut{
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+/* ------------------------------FOOTER------------------------------ */
+footer.principale{
+    justify-content: space-between;
+    bottom: 0;
+    height: fit-content;
+    overflow: hidden;
+}
+footer.principale > .margin-bottom{
+    margin-bottom: 35px;
+}
+footer.principale .credits{
+    text-align: center;
+    width: calc(100% - 30px);
+    font-size: 8pt;
+    position: fixed;
+    transform: translate(-50%, 0);
+    left:50%;
+    bottom: 0px;
+    line-height: 50px;
+}

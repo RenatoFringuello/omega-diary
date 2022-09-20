@@ -1,0 +1,120 @@
+
+/* Basics */
+/* default */
+:root{
+    --dist1 : 15px;
+    --dist2 : 10px;
+    --dist3 : 5px;
+
+    --def1 : #282828;
+    --def2 : #A2A89C;
+    --def3 : #0F1104;
+    --def4 : #DAF029;
+    --def5 : #F6FBF8;
+}
+
+.b11 { color: #F6FBF8; }
+.b12 { color: #62665E; }
+.b13 { color: #FFFFFF; }
+.b14 { color: #5200A4; }
+.b15 { color: #282828; }
+
+.b21 { color: #16312F; }
+.b22 { color: #A2A89C; }
+.b23 { color: #0F1104; }
+.b24 { color: #29F0E4; }
+.b25 { color: #F6FBF8; }
+
+.b31 { color: #3C271B; }
+.b32 { color: #A2A89C; }
+.b33 { color: #0F1104; }
+.b34 { color: #F07129; }
+.b35 { color: #F6FBF8; }
+
+.b41 { color: #172D14; }
+.b42 { color: #A2A89C; }
+.b43 { color: #0F1104; }
+.b44 { color: #45F029; }
+.b45 { color: #F6FBF8; }
+
+
+
+
+
+/* gods */
+/* zeus */
+.Olympus-4-1-hex { color: #305473; }
+.Olympus-4-2-hex { color: #F2EFC2; }
+.Olympus-4-3-hex { color: #F2DF80; }
+.Olympus-4-4-hex { color: #A65D03; }
+.Olympus-4-5-hex { color: #734002; }
+
+.Grey-Light-1-hex { color: #AEAEB0; }
+.Grey-Light-2-hex { color: #6F6F70; }
+.Grey-Light-3-hex { color: #EDEDF0; }
+.Grey-Light-4-hex { color: #F8F8FC; }
+.Grey-Light-5-hex { color: #D3D3D6; }
+.Grey-Light-6-hex { color: #F2DF80; }
+
+/* poseidon */
+.poseidon-trident-at-the-bottom-of-the-sea-1-hex { color: #023059; }
+.poseidon-trident-at-the-bottom-of-the-sea-2-hex { color: #012340; }
+.poseidon-trident-at-the-bottom-of-the-sea-3-hex { color: #F2C438; }
+.poseidon-trident-at-the-bottom-of-the-sea-4-hex { color: #F2A341; }
+.poseidon-trident-at-the-bottom-of-the-sea-5-hex { color: #BF7534; }
+
+.Athnes-et-lAcropole-1-hex { color: #115DBF; }
+.Athnes-et-lAcropole-2-hex { color: #2B88D9; }
+.Athnes-et-lAcropole-3-hex { color: #F2D6B3; }
+.Athnes-et-lAcropole-4-hex { color: #8C6A56; }
+.Athnes-et-lAcropole-5-hex { color: #260801; }
+
+/* ade */
+.Hades-1-hex { color: #F29C6B; }
+.Hades-2-hex { color: #F24B0F; }
+.Hades-3-hex { color: #8C1308; }
+.Hades-4-hex { color: #F20505; }
+.Hades-5-hex { color: #260B0B; }
+
+.ZEUSAnamorph-1-hex { color: #F2CB05; }
+.ZEUSAnamorph-2-hex { color: #F2B705; }
+.ZEUSAnamorph-3-hex { color: #BFB3A8; }
+.ZEUSAnamorph-4-hex { color: #F21905; }
+.ZEUSAnamorph-5-hex { color: #400101; }
+
+/* elite */
+/* sparta; piu gold che amaranto; manca il gold */
+.Myths-About-Graphic-Designs-illustrations-1-hex { color: #8C1822; }
+.Myths-About-Graphic-Designs-illustrations-2-hex { color: #2C3340; }
+.Myths-About-Graphic-Designs-illustrations-3-hex { color: #F2CC85; }
+.Myths-About-Graphic-Designs-illustrations-4-hex { color: #F29829; }
+.Myths-About-Graphic-Designs-illustrations-5-hex { color: #8C6E5D; }
+
+/* roma */
+.color-theme_57ae8c9e873aa79c3acb24b0fdf92399--roma-antigua-ancient-greece-1-hex { color: #D9AC59; }
+.color-theme_57ae8c9e873aa79c3acb24b0fdf92399--roma-antigua-ancient-greece-2-hex { color: #F2EFE9; }
+.color-theme_57ae8c9e873aa79c3acb24b0fdf92399--roma-antigua-ancient-greece-3-hex { color: #BF843B; }
+.color-theme_57ae8c9e873aa79c3acb24b0fdf92399--roma-antigua-ancient-greece-4-hex { color: #8C3D2B; }
+.color-theme_57ae8c9e873aa79c3acb24b0fdf92399--roma-antigua-ancient-greece-5-hex { color: #023838; }
+
+/* valhalla */
+.The-village-of-Saint-Abbs-in-Scotland-which-featured-as-New-Asgard-in-the-1-hex { color: #89888C; }
+.The-village-of-Saint-Abbs-in-Scotland-which-featured-as-New-Asgard-in-the-2-hex { color: #E9F2F1; }
+.The-village-of-Saint-Abbs-in-Scotland-which-featured-as-New-Asgard-in-the-3-hex { color: #D0D9D8; }
+.The-village-of-Saint-Abbs-in-Scotland-which-featured-as-New-Asgard-in-the-4-hex { color: #1C2614; }
+.The-village-of-Saint-Abbs-in-Scotland-which-featured-as-New-Asgard-in-the-5-hex { color: #592B02; }
+
+
+
+/* nike theme "theme1" */
+.Nike---Characters-1-hex { color: #F20F79; }
+.Nike---Characters-2-hex { color: #7007D9; }
+.Nike---Characters-3-hex { color: #5207F2; }
+.Nike---Characters-4-hex { color: #F2A007; }
+.Nike---Characters-5-hex { color: #F2441D; }
+
+.COLLECTED-Explorations-18-1-hex { color: #A904BF; }
+.COLLECTED-Explorations-18-2-hex { color: #5306BF; }
+.COLLECTED-Explorations-18-3-hex { color: #835BD9; }
+.COLLECTED-Explorations-18-4-hex { color: #6AD97B; }
+.COLLECTED-Explorations-18-5-hex { color: #D94929; }
