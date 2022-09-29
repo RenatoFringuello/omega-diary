@@ -1,18 +1,13 @@
 function loading(){
-    navigator.permissions.query({name:'audio'}).then((result) => {
-        if (result.state === 'granted') {
-          showMap();
-        } else if (result.state === 'prompt') {
-          showButtonToEnableMap();
-        }
-        // Don't do anything if the permission was denied.
-      });
+    
 }
 
+/* ------------------------------LOG IN------------------------------ */
 function goto(link){
     document.location.href = link;
 }
 
+/* ------------------------------ASIDE MENU------------------------------ */
 // aside menu toggle
 //aside = header
 function toggleHam(){
@@ -29,13 +24,13 @@ function toggleHam(){
 function open(){
     $("header .logo").fadeOut(100, ()=>{
         $("header.principale").css({
-            "background-color" : "var(--def1)",
+            "background-color" : "var(--col1)",
             "width" : "50px",
             "height" : "100%"
         });
         $("header.principale .logo").show();
         $("header.principale .logo").css("position", "absolute");
-        $("ul.buttons-menu .item").fadeIn("slow");
+        $("ul.buttons-menu .button").fadeIn("slow");
         $(".overlay").fadeIn("slow");
         $("header.principale").css({
             "transition" : "all 0.5s ease-in-out",
@@ -45,7 +40,7 @@ function open(){
     });
 }
 function close(){
-    $("ul.buttons-menu .item").fadeOut(100,()=>{
+    $("ul.buttons-menu .button").fadeOut(100,()=>{
         $("header .logo").fadeOut(100);
         $(".overlay").fadeOut("slow");
         $("header.principale").css({
@@ -65,6 +60,20 @@ function close(){
     },500);
 }
 
+/* ------------------------------HOME------------------------------ */
+//set frequency
+function setFrequency(isMono){
+    if(isMono){
+        // in mono freq people train just one group
+        $("#muscular-group input").attr("type", "radio");
+    }
+    else{
+        // in multi freq people train just two or more group, sometimes total body
+        $("#muscular-group input").attr("type", "checkbox");
+    }
+}
+
+/* ------------------------------WORKOUT------------------------------ */
 //map
 function map(maxA, maxB, a){
     return (maxB * a) / maxA;
@@ -87,9 +96,10 @@ function setTimer(){
 } 
 
 function showTimer(){
-    $("body footer.principale.workout").css({
-        "animation" : "height 0.5s ease-in-out once",
-        "height" : "calc(100% - 50px)"
+    $("footer.workout").css({
+        "transition" : "all 0.8s ease-in-out",
+        "top" : "50px",
+        "bottom" : "0"
     });
 }
 
@@ -119,6 +129,13 @@ function stopTimer(){
     clearInterval(timerSet);
     $("#rest h2").text("Rest");
     $("body footer.principale.workout").css({
-        "height" : "fit-content"
+        "top" : "calc(100% - 104px)",
+        "bottom" : "auto"
     });
+}
+
+/* ------------------------------THEME------------------------------ */
+function setTheme(id){
+    var path = (id == "def") ? "../css/themes/default-theme.css" : "../css/themes/" + id + ".css"
+    $("#linkTheme").attr("href", path);
 }

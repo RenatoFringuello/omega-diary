@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/themes.css">
+    <link id="linkTheme" rel="stylesheet" href="../css/themes/default-theme.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/component.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -27,16 +27,16 @@
             </div>
             <div class="logo">Ω</div>
             <ul class="buttons-menu">
-                <li class="button item">
+                <li class="button">
                     <a href="home.html" class="button-main" id="goHome"><h3>Home</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="theme.html" class="button-main unSelected" id="goTheme"><h3>Theme</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="legend.html" class="button-main unSelected" id="goLegend"><h3>Legend</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="../index.html" class="button-main" id="logOut"><h3>Log Out</h3></a>
                 </li>
             </ul>
@@ -49,11 +49,11 @@
                         <div class="group">
                             <div class="title">Phase</div>
                             <div class="area two-items" id="phase">
-                                <label class="radio-input">
+                                <label class="item">
                                     <input type="radio" checked="checked" name="phase" id="bulk">
                                     <span class="checkmark">🦍</span>
                                 </label>
-                                <label class="radio-input">
+                                <label class="item">
                                     <input type="radio" name="phase" id="cut">
                                     <span class="checkmark">🔪</span>
                                 </label>
@@ -62,11 +62,11 @@
                         <div class="group">
                             <div class="title">Frequency</div>
                             <div class="area two-items" id="frequency">
-                                <label class="radio-input">
+                                <label class="item">
                                     <input type="radio" checked="checked" name="frequency" id="mono">
                                     <span class="checkmark">🔁</span>
                                 </label>
-                                <label class="radio-input">
+                                <label class="item">
                                     <input type="radio" name="frequency" id="multi">
                                     <span class="checkmark">🔂</span>
                                 </label>
@@ -76,15 +76,15 @@
                     <div class="group">
                         <div class="title">Work Type</div>
                         <div class="area three-items" id="work">
-                            <label class="radio-input">
+                            <label class="item">
                                 <input type="radio" checked="checked" name="work" id="strenght">
                                 <span class="checkmark">🦁</span>
                             </label>
-                            <label class="radio-input">
+                            <label class="item">
                                 <input type="radio" name="work" id="hypertorphy">
                                 <span class="checkmark">🏋️</span>
                             </label>
-                            <label class="radio-input">
+                            <label class="item">
                                 <input type="radio" name="work" id="explosivity">
                                 <span class="checkmark">💣</span>
                             </label>
@@ -93,24 +93,24 @@
                     <div class="group">
                         <div class="title">Muscular Group</div>
                         <div class="area five-items" id="muscular-group">
-                            <label class="radio-input">
-                                <input type="checkbox" checked="checked" name="group" id="chest">
+                            <label class="item">
+                                <input type="radio" checked="checked" name="group" id="chest">
                                 <span class="checkmark">🧰</span>
                             </label>
-                            <label class="radio-input">
-                                <input type="checkbox" name="group" id="leg">
+                            <label class="item">
+                                <input type="radio" name="group" id="leg">
                                 <span class="checkmark">🦵</span>
                             </label>
-                            <label class="radio-input">
-                                <input type="checkbox" name="group" id="shoulders">
+                            <label class="item">
+                                <input type="radio" name="group" id="shoulders">
                                 <span class="checkmark">🤷</span>
                             </label>
-                            <label class="radio-input">
-                                <input type="checkbox" name="group" id="back">
+                            <label class="item">
+                                <input type="radio" name="group" id="back">
                                 <span class="checkmark">🔙</span>
                             </label>
-                            <label class="radio-input">
-                                <input type="checkbox" name="group" id="bintri">
+                            <label class="item">
+                                <input type="radio" name="group" id="bintri">
                                 <span class="checkmark">💪</span>
                             </label>
                         </div>

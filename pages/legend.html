@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/themes.css">
+    <link id="linkTheme" rel="stylesheet" href="../css/themes/default-theme.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/component.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -27,16 +27,16 @@
             </div>
             <div class="logo">Ω</div>
             <ul class="buttons-menu">
-                <li class="button item">
+                <li class="button">
                     <a href="home.html" class="button-main unSelected" id="goHome"><h3>Home</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="theme.html" class="button-main unSelected" id="goTheme"><h3>Theme</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="legend.html" class="button-main " id="goLegend"><h3>Legend</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="../index.html" class="button-main" id="logOut"><h3>Log Out</h3></a>
                 </li>
             </ul>
@@ -44,11 +44,85 @@
         <main>
             <h1 class="title">Legend</h1>
             <div class="form">
-                <div class="dashboard">
+                <div class="dashboard3" id="workout-main">
                     <div class="group">
-                        <div class="title"></div>
+                        <div class="title">Phase</div>
                         <div class="area">
-                            <div class="item"></div>
+                            <div class="info">With the phase button you can choose between Bulk (Gorilla) or Cut (Knife), just to remind the phase you are into.</div>
+                            <div class="items two-items">
+                                <label class="item">
+                                    <input type="radio" name="phase">
+                                    <span class="checkmark">🦍</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="phase">
+                                    <span class="checkmark">🔪</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="title">Work Type</div>
+                        <div class="area">
+                            <div class="info">In work type there is the typology of the workout like Strenght (Lion), Hypertrophy (Weightlifter) and Explosive (Bomb).</div>
+                            <div class="items three-items">
+                                <label class="item">
+                                    <input type="radio" name="work">
+                                    <span class="checkmark">🦁</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="work">
+                                    <span class="checkmark">🏋️</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="work">
+                                    <span class="checkmark">💣</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="title">Frequency</div>
+                        <div class="area">
+                            <div class="info">Means the frequency of training in a week of muscular groups and it can be Mono (1st) or Multi (2nd).</div>
+                            <div class="items two-items">
+                                <label class="item">
+                                    <input type="radio" name="frequency">
+                                    <span class="checkmark">🔁</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="frequency">
+                                    <span class="checkmark">🔂</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="title">Muscular Group</div>
+                        <div class="area">
+                            <div class="info">Choose those group you’re in going to train. Switch frequency to Multi if you want to select 2 or more groups.<br>Bi & Tri (💪), Leg (🦵), Shoulders (🤷), Back (🔙) and Chest (🧰)</div>
+                            <div class="items five-items">
+                                <label class="item">
+                                    <input type="radio" name="group">
+                                    <span class="checkmark">🧰</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="group">
+                                    <span class="checkmark">🦵</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="group">
+                                    <span class="checkmark">🤷</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="group">
+                                    <span class="checkmark">🔙</span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="group">
+                                    <span class="checkmark">💪</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>

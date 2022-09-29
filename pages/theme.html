@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/themes.css">
+    <link id="linkTheme" rel="stylesheet" href="../css/themes/default-theme.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/component.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -28,16 +29,16 @@
             </div>
             <div class="logo">Ω</div>
             <ul class="buttons-menu">
-                <li class="button item">
+                <li class="button">
                     <a href="home.html" class="button-main unSelected" id="goHome"><h3>Home</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="theme.html" class="button-main " id="goTheme"><h3>Theme</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="legend.html" class="button-main unSelected" id="goLegend"><h3>Legend</h3></a>
                 </li>
-                <li class="button item">
+                <li class="button">
                     <a href="../index.html" class="button-main" id="logOut"><h3>Log Out</h3></a>
                 </li>
             </ul>
@@ -45,14 +46,83 @@
         <main>
             <h1 class="title">Theme</h1>
             <div class="form">
-                <div class="dashboard">
+                <div class="dashboard" id="theme">
                     <div class="group">
-                        <div class="title"></div>
-                        <div class="area">
-                            <div class="item"></div>
+                        <div class="title">Basic</div>
+                        <div class="area five-items" id="basic">
+                            <label class="item">
+                                <input type="radio" checked="checked" name="theme" id="def">
+                                <span class="checkmark">Ω</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="b1">
+                                <span class="checkmark">Ω</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="b2">
+                                <span class="checkmark">Ω</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="b3">
+                                <span class="checkmark">Ω</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="b4">
+                                <span class="checkmark">Ω</span>
+                            </label>
                         </div>
                     </div>
-                </div>
+                    <div class="group">
+                        <div class="title">Elite</div>
+                        <div class="area three-items" id="elite">
+                            <label class="item">
+                                <input type="radio" name="theme" id="spa">
+                                <span class="checkmark">🏺</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="rome">
+                                <span class="checkmark">🏛</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="val">
+                                <span class="checkmark">⚔️</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="title">God</div>
+                        <div class="area three-items" id="god">
+                            <label class="item">
+                                <input type="radio" name="theme" id="zeus">
+                                <span class="checkmark">⚡️</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="pos">
+                                <span class="checkmark">🔱</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="ade">
+                                <span class="checkmark">🔥</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="title">Mr. Olympia</div>
+                        <div class="area three-items" id="mr">
+                            <label class="item">
+                                <input type="radio" name="theme" id="1st">
+                                <span class="checkmark">🥇</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="2nd">
+                                <span class="checkmark">🥈</span>
+                            </label>
+                            <label class="item">
+                                <input type="radio" name="theme" id="3rd">
+                                <span class="checkmark">🥉</span>
+                            </label>
+                        </div>
+                    </div>
             </div>
         </main>
         <footer class="principale">

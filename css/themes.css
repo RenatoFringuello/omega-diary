@@ -6,12 +6,93 @@
     --dist2 : 10px;
     --dist3 : 5px;
 
+    --col1 : #282828;
+    --col2 : #A2A89C;
+    --col3 : #0F1104;
+    --col4 : #DAF029;
+    --col5 : #F6FBF8;
+
+    /* def */
     --def1 : #282828;
     --def2 : #A2A89C;
     --def3 : #0F1104;
     --def4 : #DAF029;
     --def5 : #F6FBF8;
+
+    /* b1 */
+    --b11 : #F6FBF8;
+    --b12 : #c99ff4;
+    --b13 : #FFFFFF;
+    --b14 : #5200A4;
+    --b15 : #282828;
+
+    /* b2 */
+    --b21 : #16312F;
+    --b22 : #A2A89C;
+    --b23 : #0F1104;
+    --b24 : #29F0E4;
+    --b25 : #F6FBF8;
+
+    /* b3 */
+    --b31 : #3C271B;
+    --b32 : #A2A89C;
+    --b33 : #0F1104;
+    --b34 : #F07129;
+    --b35 : #F6FBF8;
+
+    /* b4 */
+    --b41 : #172D14;
+    --b42 : #A2A89C;
+    --b43 : #0F1104;
+    --b44 : #45F029;
+    --b45 : #F6FBF8; 
+
+    /* sparta */
+    --spa1 : #8C1822;
+    --spa2 : #2C3340;
+    --spa3 : #F2CC85;
+    --spa4 : #F29829;
+    --spa5 : #8C6E5D;
+
+    /* rome */
+    --rome1 : #D9AC59;
+    --rome2 : #F2EFE9;
+    --rome3 : #BF843B;
+    --rome4 : #8C3D2B;
+    --rome5 : #023838; 
+     
+    /* valhalla */
+    --val1 : #89888C;
+    --val2 : #E9F2F1;
+    --val3 : #D0D9D8;
+    --val4 : #1C2614;
+    --val5 : #592B02; 
+
+    /* zeus */
+    --zeus1 : #AEAEB0;
+    --zeus2 : #6F6F70;
+    --zeus3 : #EDEDF0;
+    --zeus4 : #F8F8FC;
+    --zeus5 : #D3D3D6;
+    --zeus6 : #F2DF80;
+
+    /* poseidon */
+    --pos1 : #115DBF;
+    --pos2 : #2B88D9;
+    --pos3 : #F2D6B3;
+    --pos4 : #8C6A56;
+    --pos5 : #260801; 
+     
+    /* ade */
+    --ade1 : #F29C6B;
+    --ade2 : #F24B0F;
+    --ade3 : #8C1308;
+    --ade4 : #F20505;
+    --ade5 : #260B0B; 
 }
+
+
+
 
 .b11 { color: #F6FBF8; }
 .b12 { color: #62665E; }

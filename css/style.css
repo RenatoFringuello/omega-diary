@@ -1,11 +1,24 @@
+:root{
+    --dist1 : 15px;
+    --dist2 : 10px;
+    --dist3 : 5px;
+    --itemWH : 55px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 html, body{  
     height: -webkit-fill-available;
-    background: var(--def1);
-    color: var(--def4);
+    background: var(--col1);
+    color: var(--col4);
     font-family: 'Inter', sans-serif;
     display: grid;
     place-content: center;
+    overflow: hidden;
 }
+
 body > .container{
     height: -webkit-fill-available;
     width: 100vw;
@@ -40,10 +53,7 @@ main{
     padding: 70px var(--dist1) ;
 }
 main > .title{
-    padding: 0 0 30px 0;
-}
-.form{
-    height: 100%;
+    padding: 0 0 var(--dist3) 0;
 }
 .form .element{
     margin-bottom: 26px;
@@ -51,14 +61,12 @@ main > .title{
 
 /* ------------------------------WORKOUT-Main------------------------------ */
 /* timer */
-body footer.principale.workout{
-    background-color: var(--def2);
+footer.workout{
+    background-color: var(--col2);
     border-radius:20px 20px 0 0;
-    color: var(--def3);
-    /* add in js */
-
-    /* height: calc(100% - 50px); max*/
-    /* height: fit-content; min*/
+    color: var(--col3);
+    bottom: auto;
+    top:calc(100% - 104px);
 }
 footer.workout .timer{
     display: flex;
@@ -66,25 +74,26 @@ footer.workout .timer{
 }
 footer.workout .timer button.rest{
     width: calc(100% - 85px);
-    background-color: var(--def5);
+    background-color: var(--col5);
+    border-radius: var(--dist2);
 }
 footer.workout .timer input.timerset{
-    border-radius: var(--dist1);
+    border-radius: var(--dist2);
     text-align: center;
-    color: var(--def3);
+    color: var(--col3);
 }
 
 .tank{
     width: 100%;
-    height: calc(100% - 50px - 30px - 54px);
-    background-color: var(--def1);
+    height: calc(100% - 110px);
+    background-color: var(--col1);
     border-radius: var(--dist1);
     position: relative;
     overflow: hidden;
 }
 .tank .liquid{
     width: 100%;
-    background-color: var(--def4);
+    background-color: var(--col4);
     border-radius: var(--dist1);
     position: absolute;
     bottom: 0;
@@ -92,12 +101,12 @@ footer.workout .timer input.timerset{
 .tank .time{
     position: absolute;
     font-size: 110pt;
-    color:var(--def1);
+    color:var(--col1);
     transform: translate(-50%, -50%);
     top:50%;left:50%;
 }
 .tank .big{
-    -webkit-text-stroke: var(--dist1) var(--def4);
+    -webkit-text-stroke: var(--dist1) var(--col4);
 }
 
 /* ------------------------------ASIDE------------------------------ */
@@ -107,7 +116,7 @@ ul.buttons-menu{
     margin-top: 120px;
     position: relative;
 }
-ul.buttons-menu .item{
+ul.buttons-menu .button{
     margin-bottom:10px ;
     display: none;
 }
@@ -120,8 +129,9 @@ ul.buttons-menu .item{
 /* ------------------------------FOOTER------------------------------ */
 footer.principale{
     justify-content: space-between;
-    bottom: 0;
-    height: fit-content;
+    bottom: auto;
+    top:calc(100% - 104px);
+    height: calc(100% - 50px);
     overflow: hidden;
 }
 footer.principale > .margin-bottom{
@@ -135,5 +145,12 @@ footer.principale .credits{
     transform: translate(-50%, 0);
     left:50%;
     bottom: 0px;
-    line-height: 50px;
+    line-height: 35px;
+}
+
+/* ------------------------------MEDIA------------------------------ */
+@media screen and (min-width:1024px) {
+    .dashboard3{
+        min-height: 685px;
+    }
 }
