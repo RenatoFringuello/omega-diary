@@ -1,0 +1,152 @@
+:root{
+    --col1 : #282828;
+    --col2 : #A2A89C;
+    --col3 : #0F1104;
+    --col4 : #DAF029;
+    --col5 : #F6FBF8;
+}
+
+body{
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+.my-container{
+    width: 100%;
+    max-width: 768px !important;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+footer{
+    border-radius: 1rem 1rem 0 0 ;
+}
+footer .boiler{
+    height: 100vh ;
+    max-height: 70vh;
+    transition: 1s ease-in-out;
+}
+footer .boiler.closed{
+    max-height: 0;
+}
+footer .boiler .timer-text{
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    color:var(--col1);
+    font-size: 110pt;
+}
+footer .boiler .timer-text.big{
+    -webkit-text-stroke: 20px var(--col4);
+}
+
+/* carousel */
+.wrapper{
+    height: 310px;
+    /* width: calc((100vw - 56px) * 6 + 1rem); */
+}
+/* .wrapper .card{
+    width: calc(100vw - 56px);
+} */
+
+
+/* workoutgroup item */
+.workout-group-item{
+    width:  60px;
+    height: 60px;
+}
+.workout-group-item .workout-icon{
+    font-size: 2.5rem;
+}
+
+/* backgrounds */
+.bg-col1{
+    background : var(--col1) !important;
+}
+.bg-col2{
+    background : var(--col2) !important;
+}
+.bg-col3{
+    background : var(--col3) !important;
+}
+.bg-col4{
+    background : var(--col4) !important;
+}
+.bg-col5{
+    background : var(--col5) !important;
+}
+/* colors */
+.text-col1{
+    color : var(--col1) !important;
+}
+.text-col2{
+    color : var(--col2) !important;
+}
+.text-col3{
+    color : var(--col3) !important;
+}
+.text-col4{
+    color : var(--col4) !important;
+}
+.text-col5{
+    color : var(--col5) !important;
+}
+/* font */
+.fs-small{
+    font-size: small !important;
+}
+.fs-3rem{
+    font-size: 3rem;
+}
+.fs-2rem{
+    font-size: 2rem;
+}
+
+/* analyze 
+.carousel{
+    position: relative;
+    top:-10px;
+
+    width: calc(100vw - var(--dist1) * 2);
+    background-color: var(--col4);
+    color:var(--col3);
+    border-radius: var(--dist1);
+}
+
+.carousel header h3{
+    margin: var(--dist1) var(--dist1) 0 var(--dist1);
+}
+.slick-track{
+    height:255px;
+}
+.slide-container {
+    width: 100%;
+    border-radius:15px;
+    background:#0000;
+}
+.wrapper { 
+    height:100%;
+    margin:15px;
+    border-radius:15px;
+    box-shadow: 0 0 15px 0px #0008;
+}
+.card {
+    position: relative;
+    width: 100%; 
+    height:100%;
+    display: inline-block; 
+    border-radius: var(--dist2); 
+    padding:var(--dist2);
+    background:var(--col5);
+}
+.card .pgNumber{
+    line-height: 0.6em;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.card textarea[name="diary"]{
+    width: 100%;
+    height: calc(100% - 0.6em);
+    background-color: var(--col5);
+    resize:none;
+}*/
