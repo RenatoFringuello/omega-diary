@@ -53,7 +53,7 @@ footer .btn-rest{
 }
 /* carousel */
 .wrapper{
-    height: 305px;
+    height: 300px;
     /* width: calc((100vw - 56px) * 6 + 1rem); */
 }
 .wrapper .card{   
