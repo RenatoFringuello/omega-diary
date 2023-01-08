@@ -34,6 +34,9 @@ footer .boiler{
 footer .boiler.closed{
     max-height: 0;
 }
+footer .boiler .liquid{
+    border-radius: 1rem 1rem 0 0;
+}
 footer .boiler .timer-text{
     transform: translate(-50%, -50%);
     top:50%;
@@ -45,9 +48,12 @@ footer .boiler .timer-text.big{
     -webkit-text-stroke: 15px var(--col4);
 }
 
+footer .btn-rest{
+    font-size: 2.5rem;
+}
 /* carousel */
 .wrapper{
-    height: 310px;
+    height: 305px;
     /* width: calc((100vw - 56px) * 6 + 1rem); */
 }
 .wrapper .card{   

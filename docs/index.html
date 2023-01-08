@@ -69,14 +69,14 @@
     <footer class="my-container pt-3 sticky-bottom text-col3 bg-col2">
         <div class="d-flex justify-content-between" :class="timerToggle ? 'mb-3' : '' ">
             <div class="w-100 me-3" >
-                <button @click="startTimer" class="btn bg-col5 w-100 rounded-3 fw-bold fs-1">{{ buttonState }}</button>
+                <button @click="startTimer" class="btn-rest btn btn-light p-0 w-100 rounded-3 fw-bold">{{ buttonState }}</button>
             </div>
             <div class="">
                 <input class="h-100 rounded-3 bg-col5 text-col3 border-0" :class="timerToggle ? 'opacity-50' : '' " v-model="timeRaw" :disabled="timerToggle" type="time" name="" id="">
             </div>
         </div>
         <div class="boiler d-flex rounded-4 bg-col1 position-relative overflow-hidden" :class="timerToggle ? 'open' : 'closed'">
-            <div class="w-100 bg-col4 rounded-4 position-absolute bottom-0" id="liquid" :style="`height : ${getMappedHeight(timeFullSeconds, timeCurrentSeconds, 100)}%`"></div>
+            <div class="liquid w-100 bg-col4 position-absolute bottom-0" :style="`height : ${getMappedHeight(timeFullSeconds, timeCurrentSeconds, 100)}%`"></div>
             <h1 class="timer-text position-absolute big m-auto">{{ timeCurrentSeconds }}</h1>
             <h1 class="timer-text position-absolute m-auto">{{ timeCurrentSeconds }}</h1>
         </div>
