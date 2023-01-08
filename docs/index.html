@@ -30,8 +30,8 @@
     <main class="my-container flex-grow-1 overflow-hidden">
         <h1 class="text-col4 fw-bold fs-3rem lh-1">Workout</h1>
         <div class="d-flex flex-wrap justify-content-between text-center">
-            <div v-for="workout, i in workoutsPlan" @click="activeSlide = i" class="d-flex workout-group-item d-flex rounded-3 mb-3" :class="activeSlide === i ? 'bg-col4' : 'bg-col5'">
-                <span class="workout-icon m-auto">{{workout.icon}}</span>
+            <div v-for="workout, i in workoutsPlan" @click="activeSlide = i" class="d-flex workout-group-item d-flex rounded-3 mb-3" :class="activeSlide === i ? 'bg-col4 my-shadow' : 'bg-col5'">
+                <span class="workout-icon m-auto" :class="activeSlide === i ? 'my-text-shadow' : ''">{{workout.icon}}</span>
             </div>
         </div>
         
@@ -39,26 +39,26 @@
             <header>
                 <h3 class="fw-bold fs-2rem">Workouts Plan</h3>
             </header>
-            <div class="slide-container overflow-scroll">
+            <div class="slide-container rounded-3 my-shadow overflow-hidden">
 
                 <div class="wrapper d-flex overflow-scroll">
-                    <div class="card p-2 w-100 pb-0 rounded-3" >
-                            <!--add here-->
-                            <h3 class="text-center fw-bold">{{workoutsPlan[activeSlide].group}}</h3>
-                            <ul class="workout-plan m-0 overflow-scroll list-unstyled rounded-2">
-                                <li v-for="exercise, i in workoutsPlan[activeSlide].exercises" class="p-2" :class="(i%2==0)? 'bg-light' : 'bg-secondary text-white'">
-                                    <div class="row g-0">
-                                        <div class="col-9">
-                                            <div>{{exercise.exerciseName}}</div>
-                                            <div>{{exercise.sets}} x {{exercise.reps}}</div>
-                                        </div>
-                                        <label class="col-3 d-flex" :for="'exerciseCheck'+i">
-                                            <input class="m-auto" type="checkbox" v-model="exercise.isChecked" :name="'exerciseCheck'+i" :id="'exerciseCheck'+i">
-                                        </label>
+                    <div class="card p-2 w-100 pb-0" >
+                        <!--add here-->
+                        <h3 class= "fw-bold">{{workoutsPlan[activeSlide].group}}</h3>
+                        <ul class="workout-plan m-0 overflow-scroll list-unstyled rounded-2">
+                            <li v-for="exercise, i in workoutsPlan[activeSlide].exercises" class="p-2" :class="(i%2==0)? 'bg-light' : 'bg-secondary text-white'">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <div>{{exercise.exerciseName}}</div>
+                                        <div>{{exercise.sets}} x {{exercise.reps}}</div>
                                     </div>
-                                </li>
-                            </ul>
-                            <div class="pgNumber text-center fs-small text-secondary">{{activeSlide + 1}}</div>
+                                    <label class="col-3 d-flex" :for="'exerciseCheck'+i">
+                                        <input class="m-auto" type="checkbox" v-model="exercise.isChecked" :name="'exerciseCheck'+i" :id="'exerciseCheck'+i">
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pgNumber text-center fs-small text-secondary">{{activeSlide + 1}}</div>
                     </div> <!-- end card-->
                 </div> <!-- end wrapper -->
                 
@@ -69,14 +69,14 @@
     <footer class="my-container pt-3 sticky-bottom text-col3 bg-col2">
         <div class="d-flex justify-content-between" :class="timerToggle ? 'mb-3' : '' ">
             <div class="w-100 me-3" >
-                <button @click="startTimer" class="btn bg-col5 w-100 rounded-3 fw-bold fs-5">{{ buttonState }}</button>
+                <button @click="startTimer" class="btn bg-col5 w-100 rounded-3 fw-bold fs-1">{{ buttonState }}</button>
             </div>
             <div class="">
                 <input class="h-100 rounded-3 bg-col5 text-col3 border-0" :class="timerToggle ? 'opacity-50' : '' " v-model="timeRaw" :disabled="timerToggle" type="time" name="" id="">
             </div>
         </div>
-        <div class="boiler d-flex rounded-3 bg-col1 position-relative overflow-hidden" :class="timerToggle ? 'open' : 'closed'">
-            <div class="w-100 bg-col4 position-absolute bottom-0" :style="`height : ${getMappedHeight(timeFullSeconds, timeCurrentSeconds, 100)}%`" id="liquid"></div>
+        <div class="boiler d-flex rounded-4 bg-col1 position-relative overflow-hidden" :class="timerToggle ? 'open' : 'closed'">
+            <div class="w-100 bg-col4 rounded-4 position-absolute bottom-0" id="liquid" :style="`height : ${getMappedHeight(timeFullSeconds, timeCurrentSeconds, 100)}%`"></div>
             <h1 class="timer-text position-absolute big m-auto">{{ timeCurrentSeconds }}</h1>
             <h1 class="timer-text position-absolute m-auto">{{ timeCurrentSeconds }}</h1>
         </div>
