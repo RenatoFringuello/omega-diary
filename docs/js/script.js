@@ -11,7 +11,7 @@ createApp({
             timerToggle : false,
             buttonState : 'Rest',
             activeSlide : 0,
-            workoutsPlan : workouts
+            workoutsPlan : workouts,
         }
     },
     methods : {

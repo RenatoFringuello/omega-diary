@@ -53,7 +53,7 @@
                                             <div>{{exercise.sets}} x {{exercise.reps}}</div>
                                         </div>
                                         <label class="col-3 d-flex" :for="'exerciseCheck'+i">
-                                            <input class="m-auto" type="checkbox" :name="'exerciseCheck'+i" :id="'exerciseCheck'+i">
+                                            <input class="m-auto" type="checkbox" v-model="exercise.isChecked" :name="'exerciseCheck'+i" :id="'exerciseCheck'+i">
                                         </label>
                                     </div>
                                 </li>
