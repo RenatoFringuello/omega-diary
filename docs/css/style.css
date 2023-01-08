@@ -16,13 +16,19 @@ body{
     padding: 0 1rem;
     margin: 0 auto;
 }
+.my-shadow{
+    box-shadow: 0 0 15px 0px #0008;
+}
+.my-text-shadow{
+    text-shadow: 0 2px 5px #0008;
+}
 
 footer{
     border-radius: 1rem 1rem 0 0 ;
 }
 footer .boiler{
     height: 100vh ;
-    max-height: 70vh;
+    max-height: 65vh;
     transition: 1s ease-in-out;
 }
 footer .boiler.closed{
@@ -44,15 +50,15 @@ footer .boiler .timer-text.big{
     height: 310px;
     /* width: calc((100vw - 56px) * 6 + 1rem); */
 }
-/* .wrapper .card{
-    width: calc(100vw - 56px);
-} */
-
+.wrapper .card{   
+    /* width: calc(100vw - 56px); */
+}
 
 /* workoutgroup item */
 .workout-group-item{
     width:  60px;
     height: 60px;
+    cursor: pointer;
 }
 .workout-group-item .workout-icon{
     font-size: 2.5rem;
@@ -100,53 +106,3 @@ footer .boiler .timer-text.big{
 .fs-2rem{
     font-size: 2rem;
 }
-
-/* analyze 
-.carousel{
-    position: relative;
-    top:-10px;
-
-    width: calc(100vw - var(--dist1) * 2);
-    background-color: var(--col4);
-    color:var(--col3);
-    border-radius: var(--dist1);
-}
-
-.carousel header h3{
-    margin: var(--dist1) var(--dist1) 0 var(--dist1);
-}
-.slick-track{
-    height:255px;
-}
-.slide-container {
-    width: 100%;
-    border-radius:15px;
-    background:#0000;
-}
-.wrapper { 
-    height:100%;
-    margin:15px;
-    border-radius:15px;
-    box-shadow: 0 0 15px 0px #0008;
-}
-.card {
-    position: relative;
-    width: 100%; 
-    height:100%;
-    display: inline-block; 
-    border-radius: var(--dist2); 
-    padding:var(--dist2);
-    background:var(--col5);
-}
-.card .pgNumber{
-    line-height: 0.6em;
-    font-size: 0.6em;
-    text-align: center;
-}
-
-.card textarea[name="diary"]{
-    width: 100%;
-    height: calc(100% - 0.6em);
-    background-color: var(--col5);
-    resize:none;
-}*/
