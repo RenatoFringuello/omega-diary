@@ -36,7 +36,7 @@ footer .boiler .timer-text{
     font-size: 110pt;
 }
 footer .boiler .timer-text.big{
-    -webkit-text-stroke: 20px var(--col4);
+    -webkit-text-stroke: 15px var(--col4);
 }
 
 /* carousel */
