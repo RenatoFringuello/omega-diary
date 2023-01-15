@@ -11,6 +11,7 @@ createApp({
             timerToggle : false,
             buttonState : 'Rest',
             activeSlide : 0,
+            isHidden : false,
             workoutsPlan : workouts,
         }
     },
@@ -55,6 +56,10 @@ createApp({
             }
             //toggle it
             this.timerToggle = !this.timerToggle;
+        },
+        setActive(index, isHidden){
+            this.activeSlide = index; 
+            this.isHidden = isHidden;
         }
     }
 }).mount('#app');

@@ -30,7 +30,7 @@
     <main class="my-container flex-grow-1 overflow-hidden">
         <h1 class="text-col4 fw-bold fs-3rem lh-1">Workout</h1>
         <div class="d-flex flex-wrap justify-content-between text-center">
-            <div v-for="workout, i in workoutsPlan" @click="activeSlide = i" class="d-flex workout-group-item d-flex rounded-3 mb-3" :class="activeSlide === i ? 'bg-col4 my-shadow' : 'bg-col5'">
+            <div v-for="workout, i in workoutsPlan" @click="setActive(i,false)" @dblclick="setActive(i,true)" class="d-flex workout-group-item d-flex rounded-3 mb-3 user-select-none" :class="activeSlide === i ? 'bg-col4 my-shadow' : 'bg-col5'">
                 <span class="workout-icon m-auto" :class="activeSlide === i ? 'my-text-shadow' : ''">{{workout.icon}}</span>
             </div>
         </div>
@@ -46,7 +46,21 @@
                         <!--add here-->
                         <h3 class= "fw-bold">{{workoutsPlan[activeSlide].group}}</h3>
                         <ul class="workout-plan m-0 overflow-scroll list-unstyled rounded-2">
-                            <li v-for="exercise, i in workoutsPlan[activeSlide].exercises" class="p-2" :class="(i%2==0)? 'bg-light' : 'bg-secondary text-white'">
+                            <li v-if="isHidden"
+                                v-for="exercise, i in workoutsPlan[activeSlide].exercisesH" class="p-2 text-white" :class="(i%2==0)? 'bg-col1' : 'bg-col3'">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <div>{{exercise.exerciseName}}</div>
+                                        <div>{{exercise.sets}} x {{exercise.reps}}</div>
+                                        <div class="p-1 text-col4">{{exercise.rest}}</div>
+                                    </div>
+                                    <label class="col-3 d-flex" :for="'exerciseCheck'+i">
+                                        <input class="m-auto" type="checkbox" v-model="exercise.isChecked" :name="'exerciseCheck'+i" :id="'exerciseCheck'+i">
+                                    </label>
+                                </div>
+                            </li>
+                            <li v-else
+                                v-for="exercise, i in workoutsPlan[activeSlide].exercises" class="p-2" :class="(i%2==0)? 'bg-light' : 'bg-secondary text-white'">
                                 <div class="row g-0">
                                     <div class="col-9">
                                         <div>{{exercise.exerciseName}}</div>
