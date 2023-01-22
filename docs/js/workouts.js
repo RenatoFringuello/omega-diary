@@ -1,12 +1,15 @@
+// {exerciseName : "", sets:, reps:, isChecked:false },
 const workouts = [
     {
-        icon: "💣", group: "shoulder", 
+        icon: "🦵", group: "leg", 
         exercises : [
-            {exerciseName : "alzate laterali da seduto", sets:4, reps:10, isChecked:false },
-            {exerciseName : "alzate frontali da seduto", sets:4, reps:10, isChecked:false },
-            {exerciseName : "alzate laterali in stripping al multi flight", sets:3, reps: "10+10+10 a scalare", isChecked:false },
-            {exerciseName : "deltoid press", sets:5, reps:10, isChecked:false },
-            {exerciseName : "spinte manubri pesanti", sets:4, reps:10, isChecked:false }
+            {exerciseName : "leg curl in piedi", sets:3, reps:10, isChecked:false },
+            {exerciseName : "leg curl seduto", sets:3, reps:10, isChecked:false },
+            {exerciseName : "leg curl sdraiato", sets:2, reps:12, isChecked:false },
+            {exerciseName : "leg ext in stripping", sets:3, reps:"20 + 15 + 10", isChecked:false },
+            {exerciseName : "squat al multipower", sets:3, reps:10, isChecked:false },
+            {exerciseName : "affondi inversi + pressa verticale piedi paralleli al bacino", sets:3, reps:10, isChecked:false },
+            {exerciseName : "calf in piedi + seduto ", sets:3, reps:"20 + 20", isChecked:false },
         ],
         exercisesH : [
             {exerciseName : "panca piana bilanciere", sets:4, reps:"6 con negativa da 3/4 sec", rest:100, isChecked:false },
@@ -17,16 +20,14 @@ const workouts = [
         ]
     },
     {
-        icon: "💪", group: "bi & tri", 
+        icon: "🔙", group: "back", 
         exercises : [
-            {exerciseName : "curl machine in stripping", sets:3, reps: "10+10+10 a scalare", isChecked:false },
-            {exerciseName : "curl bilanciere", sets:4, reps:10, isChecked:false },
-            {exerciseName : "curl martello", sets:3, reps:10, isChecked:false },
-            {exerciseName : "curl concentrato manubrio singolo", sets:4, reps:10, isChecked:false },
-            {exerciseName : "ercolina con corda in stripping", sets:3, reps: "10+10+10 a scalare", isChecked:false },
-            {exerciseName : "french press", sets:4, reps:10, isChecked:false },
-            {exerciseName : "triceps machine", sets:3, reps:10, isChecked:false },
-            {exerciseName : "french press concentrato manubrio singolo", sets:3, reps:10, isChecked:false }
+            {exerciseName : "dorsy bar", sets:5, reps:8, isChecked:false },
+            {exerciseName : "dorsy bar inclinata", sets:3, reps:"12 / 10 / 8", isChecked:false },
+            {exerciseName : "row bench (panca accanto alla dorsy)", sets:3, reps:10, isChecked:false },
+            {exerciseName : "high row presa larga in stripping", sets:3, reps:"10 + 10 + 10", isChecked:false },
+            {exerciseName : "lat machine avanti presa stretta", sets:4, reps:10, isChecked:false },
+            {exerciseName : "low row", sets:4, reps:10, isChecked:false },
         ],
         exercisesH : [
             {exerciseName : "squat bilanciere", sets:4, reps:"6 con negativa da 3/4 sec", rest:100, isChecked:false },
@@ -38,13 +39,14 @@ const workouts = [
         ]
     },
     {
-        icon: "🧰", group: "chest", 
+        icon: "💣", group: "shoulder", 
         exercises : [
-            {exerciseName : "panca piana", sets:8, reps:8, isChecked:false },
-            {exerciseName : "spinte manubri", sets:3, reps:12, isChecked:false },
-            {exerciseName : "panca inclinata al multipower", sets:3, reps:10, isChecked:false },
-            {exerciseName : "croci ai cavi alti + ai cavi bassi", sets:4, reps: "10 + 10", isChecked:false },
-            {exerciseName : "croci manubri su panca inclinata", sets:3, reps:10, isChecked:false }
+            {exerciseName : "alzate laterali al multy flight", sets:2, reps:100, isChecked:false },
+            {exerciseName : "alzate laterali", sets:3, reps:10, isChecked:false },
+            {exerciseName : "deltoid press in stripping", sets:4, reps:"10 + 10 + 10", isChecked:false },
+            {exerciseName : "lento avanti al multipower", sets:3, reps:10, isChecked:false },
+            {exerciseName : "alzate frontali bilanciere", sets:3, reps:12, isChecked:false },
+            {exerciseName : "posteriori pack back", sets:4, reps:"10 con 2 sec in iosometria", isChecked:false },
         ],
         exercisesH : [
             {exerciseName : "chest press spinta verso l'alto", sets:3, reps:"5 in slow neg,\nscali 20% + 5 in slow pos\nscali 20% + cedimento", rest:90, isChecked:false },
@@ -58,15 +60,14 @@ const workouts = [
         ]
     },
     {
-        icon: "🦵", group: "leg", 
+        icon: "💪", group: "bi & tri", 
         exercises : [
-            {exerciseName : "leg press 45° tecnica rest pause", sets:4, reps: "5(10\"rest)+5(10\"rest)+5", isChecked:false },
-            {exerciseName : "leg ext in stripping", sets:3, reps: "10+10+10+10", isChecked:false },
-            {exerciseName : "front squat al multipower", sets:4, reps:10, isChecked:false },
-            {exerciseName : "affondi inversi manubri", sets:3, reps:10, isChecked:false },
-            {exerciseName : "hack squat", sets:3, reps:10, isChecked:false },
-            {exerciseName : "vertical leg press", sets:3, reps:10, isChecked:false },
-            {exerciseName : "calf in piedi", sets:5, reps:20, isChecked:false }
+            {exerciseName : "curl cavo basso con sbarretta", sets:3, reps:"10 + 10 + 10", isChecked:false },
+            {exerciseName : "french press manubri", sets:3, reps:"10 + 10 + 10", isChecked:false },
+            {exerciseName : "curl bilanciere dritto", sets:3, reps:"7/21", isChecked:false },
+            {exerciseName : "ercolina alla corda", sets:3, reps:"20 con 2 sec in max extensione", isChecked:false },
+            {exerciseName : "curl martello", sets:3, reps:12, isChecked:false },
+            {exerciseName : "triceps machine", sets:3, reps:12, isChecked:false },
         ],
         exercisesH : [
             {exerciseName : "squat multipower", sets:3, reps:"7 + 2 in slow neg,\nscali 20% + 7 + 2 in slow pos\nscali 20% + cedimento", rest:120, isChecked:false },
@@ -79,13 +80,14 @@ const workouts = [
         ]
     },
     {
-        icon: "🔙", group: "back", 
+        icon: "🧰", group: "chest", 
         exercises : [
-            {exerciseName : "stacchi da terra", sets:4, reps:10, isChecked:false },
-            {exerciseName : "rematore bilanciere presa prona", sets:3, reps:12, isChecked:false },
-            {exerciseName : "low row", sets:3, reps:10, isChecked:false },
-            {exerciseName : "dorsy bar + dorsy bar inclinata", sets:3, reps: "10+10", isChecked:false },
-            {exerciseName : "lat larga avanti", sets:4, reps:8, isChecked:false }
+            {exerciseName : "chest press inclinata (macchinario nuovo)", sets:4, reps:"10 + 10 + 10", isChecked:false },
+            {exerciseName : "panca inclinata bilanciere", sets:3, reps:12, isChecked:false },
+            {exerciseName : "panca inclinata manubri 38°", sets:4, reps:12, isChecked:false },
+            {exerciseName : "croci pack back", sets:3, reps:"10 con 3 sec in chiusura", isChecked:false },
+            {exerciseName : "croci ai cavi alti", sets:3, reps:20, isChecked:false },
+            {exerciseName : "push up a cedimento", sets:2, reps:"max", isChecked:false },
         ],
         exercisesH : [
             {exerciseName : "rematore t bar p.stretta con aumento di carico", sets:4, reps:"12 / 10 / 8 / 6", rest:90, isChecked:false },
